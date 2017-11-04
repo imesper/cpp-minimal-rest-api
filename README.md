@@ -42,6 +42,14 @@ Usage:
   -p, --port arg  port to listen on (default: 2000)
       --help      Print help
 
+## Test with postman
+
+[Postman](https://www.getpostman.com/) is a good app to test APIs, making it easy to set the basic authorization header to use the services
+http://localhost:2000/posts and http://localhost:2000/authenticate.
+
+Authenticate just return 200 with basic auth header is set and 401 otherwise.
+
+Posts returns the same JSON that it consumes from http://jsonplaceholder.typicode.com/posts. It also needs the authorization header.
 
 ## Built With
 
