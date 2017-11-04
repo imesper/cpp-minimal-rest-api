@@ -1,0 +1,72 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [{
+            "taskName": "CMake Debug",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/debug"
+            },
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ..",
+            "problemMatcher": []
+        },
+        {
+            "taskName": "CMake Release",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/release"
+            },
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Release ..",
+            "problemMatcher": []
+        },
+        {
+            "taskName": "make debug",
+            "type": "shell",
+            "command": "make -j 8",
+            "options": {
+                "cwd": "${workspaceRoot}/debug"
+            },
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "make release",
+            "type": "shell",
+            "command": "make -j 8",
+            "options": {
+                "cwd": "${workspaceRoot}/release"
+            },
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "make install debug",
+            "type": "shell",
+            "command": "make -j 8; and make install",
+            "options": {
+                "cwd": "${workspaceRoot}/debug"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "make tests",
+            "type": "shell",
+            "command": "make test",
+            "options": {
+                "cwd": "${workspaceRoot}/debug"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

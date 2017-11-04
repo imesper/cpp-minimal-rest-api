@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.ipp": "cpp",
+        "system_error": "cpp",
+        "*.dat": "cpp",
+        "memory": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp",
+        "condition_variable": "cpp",
+        "array": "cpp",
+        "istream": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "optional": "cpp",
+        "ratio": "cpp",
+        "type_traits": "cpp"
+    }
+}
