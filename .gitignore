@@ -1,6 +1,7 @@
-bin/debug/**
-bin/release/**
-lib/debug/**
-lib/release/**
-debug/**
-release/**
+bin/debug/*
+bin/release/*
+lib/debug/*
+lib/release/*
+debug/*
+release/*
+
