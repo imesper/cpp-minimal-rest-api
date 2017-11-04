@@ -5,3 +5,24 @@ lib/release/*
 debug/*
 release/*
 
+!bin/debug/.gitkeep
+!bin/release/.gitkeep
+!lib/debug/.gitkeep
+!lib/release/.gitkeep
+!debug/.gitkeep
+!release/.gitkeep
+
+
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+-- VISUAL --                                                                                      6         1,1           All
+
