@@ -49,7 +49,7 @@ Usage:
 
 ## Authors
 
-* **Ian Esper** - *Initial work* - [Minimal-Rest-API](https://bitbucket.com/imesper)
+* **Ian Esper** - *Initial work* - [Minimal-Rest-API](https://bitbucket.org/imesper/minimal-rest-api)
 
 ## License
 
