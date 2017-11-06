@@ -50,7 +50,7 @@ pplx::task<bool> BaseServiceServer::authenticate(web::http::http_request message
     utility::string_t credentials64 = it->second;
 
     // Check for basic authentication (Just for demontration a better method or authentication server should be used)
-    if (credentials64.substr(0, 5) == "Basic")
+    if (credentials64.find("Basic") != string::npos)
     {
         vector<unsigned char> creds = utility::conversions::from_base64(credentials64.erase(0, 6));
 
